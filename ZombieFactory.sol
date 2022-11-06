@@ -24,7 +24,8 @@ contract ZombieFactory {
 
         //Let the function fire the NewZombie event after 
         //adding a new zombie to an array
-        uint id = zombies.push(Zombie(_name, _dna)) - 1;
+        zombies.push(Zombie(_name, _dna));
+        uint id = zombies.length -1;
         emit NewZombie(id, _name, _dna);
     } 
 
