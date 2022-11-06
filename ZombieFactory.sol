@@ -19,7 +19,7 @@ contract ZombieFactory {
     //Let's restrict external contracts from creating a zombie
     function _createZombie(string memory _name, uint _dna) private {
 
-
+        zombies.push(Zombie(_name, _dna));
     } 
 
 }
