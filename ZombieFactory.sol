@@ -15,9 +15,11 @@ contract ZombieFactory {
 
     Zombie[] public zombies;
     
-    //Let's now create the zombies using a function
-    function createZombie(string memory _name, uint _dna) public {
-        
+    //Adding a zombie to the factory based on the Name and DNA
+    //Let's restrict external contracts from creating a zombie
+    function _createZombie(string memory _name, uint _dna) private {
+
+
     } 
 
 }
