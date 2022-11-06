@@ -28,7 +28,7 @@ contract ZombieFactory {
         return rand % dnaModulus;
     }
 
-    //Let's get the zombie's name to used to generate a random DNA
+    //Let's get the zombie's name and use it to generate a random DNA
     function createRandomZombie(string memory _name) public {
         uint randDna = _generateRandomDna(_name);
         _createZombie(_name, randDna);
